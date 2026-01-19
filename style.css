@@ -82,7 +82,7 @@ header{
 }
 
 .hero-circle {
-  width: 21.875rem;   /* 350px */
+  width: 21.875rem; 
   height: 21.875rem;
 }
 
@@ -156,26 +156,25 @@ header{
 
 .about-container {
     background-color: #1A0B2E;
-    padding: 3.125rem 0 7.5rem; /* 50px top, 120px bottom */
+    padding: 3.125rem 0 7.5rem;
   }
   
   .about-inner {
-    max-width: 75rem; /* 1200px */
+    max-width: 75rem; 
     margin: 0 auto;
     text-align: center;
     color: #fff;
   }
   
-  /* Title */
+
   .about-title {
-    font-size: 3rem;      /* 48px */
-    font-weight: 700;    /* bold */
+    font-size: 3rem;    
+    font-weight: 700;  
   }
   
-  /* Subtitles */
   .about-subtitle {
-    font-size: 1rem;     /* 16px */
-    font-weight: 400;   /* regular */
+    font-size: 1rem;     
+    font-weight: 400;
     color: #dcdcdc;
     max-width: 46rem;
     margin: 1.25rem auto 0;
@@ -215,3 +214,65 @@ header{
     color: #fff;
     letter-spacing: 0.05em;
   }
+
+  /* why techwave section styles */
+
+  .why-techwave {
+    background-color: #230E3D;
+    padding: 7.5rem 0;
+
+  }
+  
+  .why-techwave .why-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+
+  .why-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+  }
+  
+
+  .why-cards-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem; 
+  }
+  
+
+  .why-card {
+    background: rgba(53, 17, 101, 0.4);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .why-card img {
+    width: 2rem;
+    height: auto;
+  }
+  
+  .why-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .why-card p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+
+
+
+
