@@ -95,8 +95,6 @@ header {
 /* Hamburger Menu Icon */
 .hamburger-menu {
     display: none;
-    cursor: pointer;
-    padding: 10px;
 }
 
 .hamburger-menu img {
@@ -342,7 +340,7 @@ header {
     line-height: 1.6;
 }
 
-/* card grid layout - Desktop */
+/* card grid layout */
 .why-cards-area .card-1 {
     grid-column: span 1;
     grid-row: span 2;
@@ -724,10 +722,18 @@ header {
     .subscribe-btn {
         display: none;
     }
-    
+
     .hamburger-menu {
-        display: block;
+        display: flex;
+        cursor: pointer;
     }
+    
+    .hamburger-menu img {
+        width: 30px;
+        height: 30px;
+    }
+    
+
     
     .navbar {
         width: 100%;
