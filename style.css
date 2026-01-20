@@ -1,11 +1,29 @@
 /* Google font */
 
 
-.inter{
-  font-family: "Inter";
-  font-optical-sizing: auto;
-}
+.inter {
+    font-family: "Inter", sans-serif;
+  }
 
+
+  /* keyframe */
+  @keyframes float {
+    0%, 100% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+      transform: translate(-50%, -50%) translateY(-15px);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 /* navbar related styles */
 header{
@@ -48,22 +66,18 @@ header{
     font-size: 1rem;
     font-weight: 500;
 }
-.subscirbe-btn .btn-primary{
+.subscribe-btn .btn-primary{
     display: flex;
     padding: 12px 16px;
     gap:8px ;
     border-radius: 30px;
-    background: linear-gradient(to top, #ffffff 0%, #999999 75%, #999999 100%);
+    background: linear-gradient(90deg, #ff512f, #dd2476, #24c6dc);
     color: white;
     font-size: 1rem;
     font-weight: 600;
+    border: none;
+    cursor: pointer;
     }
-
-.subscirbe-btn{
-    :hover{
-        cursor: pointer;
-    }
-}
 
 
 /* hero section styles */
@@ -84,13 +98,15 @@ header{
 .hero-circle {
   width: 21.875rem; 
   height: 21.875rem;
+  animation: rotate 20s linear infinite;
 }
 
 .hero-mic {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: float 3s ease-in-out infinite;
 }
 
 
@@ -304,10 +320,6 @@ header{
     grid-row: span 1;
     justify-content: center;
   }
-
-
-
-
 
   /* Featured Episodes & Meet the Host */
 
