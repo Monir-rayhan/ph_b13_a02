@@ -2,7 +2,7 @@
 
 
 .inter{
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
   font-optical-sizing: auto;
 }
 
@@ -374,7 +374,7 @@ header{
 }
 
 .episode-title {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem; 
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 12px;
@@ -382,7 +382,7 @@ header{
 }
 
 .episode-desc {
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
     font-weight: 400;
     color: #dcdcdc;
     line-height: 1.6;
@@ -495,4 +495,70 @@ header{
 .icon-circle img {
     width: 16px;
     height: 16px;
+}
+
+
+/* fotter section styles */
+
+.footer-section {
+    background: url('assets/footer-bg.png') no-repeat center/cover;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+/* Footer Logo */
+.footer-logo h3 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-logo .logo-gradiant {
+    background: linear-gradient(90deg, #ff512f, #dd2476, #24c6dc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-icon-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
+}
+
+.footer-icon-item:hover {
+    transform: translateY(-5px);
+}
+
+.footer-icon-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-icon-item span {
+    font-size: 1rem; 
+    font-weight: 500; 
+    color: #ffffff;
+}
+
+.copyright p {
+    font-size: 1rem; 
+    font-weight: 500; 
+    color: #ffffff;
+    margin-top: 20px;
 }
